@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>-->
+    <meta name="author" content="MMPWW">
+    <title>Bank Muscat Eid Game</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="FFND9cRf"></script>
+    <script type="text/javascript" src="main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F368EW6BSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F368EW6BSS');
+</script>
+</head>
+
+<body>
+<div id="wrapper" class="clearfix" >
+    <div class="mmpww-close-btn">
+        <img src="assets/close-btn.png" class="close-btn">
+    </div>
+
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-centered">
+                <div class="game-wrapper">
+                    <div class="game-container">
+                        <div class="header">
+                            <div class="no-gutters">
+                                <div class="lives">
+                                <img src="assets/heart.png" id="life1">
+                                <img src="assets/heart.png" id="life2">
+                                <img src="assets/heart.png" id="life3">
+                                <img src="assets/lives.png" id="text">
+                            </div>
+                                <div class="score">
+
+                                        <img src="assets/coin.png" id="coin">
+                                        <span id="coins_score">0</span>
+
+
+                                        <img src="assets/card.png" id="card">
+                                        <span id="cards_score">0</span>
+
+
+                                        <img src="assets/atm.png" id="atm">
+                                        <span id="atm_score">0</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="falling_game">
+                            <div class="background">
+                                <div class="house" >
+                                    <img src="assets/house.png">
+                                </div>
+                                <div class="overlay"></div>
+                                <img src="assets/bg6.jpg" class="upper-image">
+                                <img src="assets/bg2.jpg" class="lower-image">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+                <div class="frame frame-1">                    
+                    <div class="logo">
+                        <img src="assets/logo.png">
+                    </div>
+                    <div class="decoration">
+                        <img src="assets/decoration.png">
+                    </div>
+                    <div class="bank-image">
+                        <img src="assets/bank.png">
+                    </div>
+                    <div class="copy-right">
+                        <img src="assets/copy.png">
+                    </div>
+                    <div class="text">
+                        <img src="assets/frame1/text.png">
+                    </div>
+                    <div class="play-btn">
+                        <img src="assets/frame1/cta.png">
+                    </div>
+                </div>
+                <div class="frame frame-2">
+                  <img src="assets/frame2/bg.jpg" class="background">
+                    <div class="copy-right">
+                        <img src="assets/copy.png">
+                    </div>
+                    <div class="logo">
+                        <img src="assets/logo.png">
+                    </div>
+                    <div class="decoration">
+                        <img src="assets/decoration.png">
+                    </div>
+
+                    <div class="text">
+                        <img src="assets/frame2/text.png">
+                    </div>
+                   <div class="select-player">
+                       <div class="prev-btn">
+                           <img src="assets/frame2/left.png">
+                       </div>
+                       <div class="next-btn">
+                         <img src="assets/frame2/right.png">
+                       </div>
+                       <div class="player" >
+                           <img src="assets/frame2/girl.png" id="player">
+                       </div>
+                   </div>
+                </div>
+                <div class="frame frame-3">
+                    <img src="assets/frame3/overlay.png" class="layer">
+                    <div class="house" >
+                        <img src="assets/house.png">
+                    </div>
+                    <div class="card-text">
+                        <img src="assets/frame3/10.png">
+                    </div>
+                    <div class="coin-text">
+                        <img src="assets/frame3/1.png">
+                    </div>
+                    <div class="atm-text">
+                        <img src="assets/frame3/50.png">
+                    </div>
+                    <div class="girl-text">
+                        <img src="assets/frame3/press.png">
+                    </div>
+                    <div class="cannon-text">
+                        <img src="assets/frame3/jump.png">
+                    </div>
+
+
+                        <div class="money" >
+                            <img src="assets/frame3/money.png">
+                        </div>
+                    <div class="start-btn">
+                        <img src="assets/frame3/cta.png">
+                    </div>
+                        <div class="ground-background" >
+                            <img src="assets/frame3/girl.png" >
+                        </div>
+
+                        <div class="sky-background">
+                            <img src="assets/frame3/bg1.jpg">
+                        </div>
+                        <div class="header" >
+                            <img src="assets/frame3/header.jpg" >
+
+                        </div></div>
+
+
+
+                </div>
+                <div class="frame frame-4">
+                    <img src="assets/frame4/bg.png" class="background">
+                    <div class="instructions-box">
+                        <img src="assets/frame4/box.png">
+                    </div>
+                    <div class="text">
+                        <img src="assets/frame4/text.png">
+                    </div>
+                    <div class="replay-btn">
+                        <img src="assets/frame4/cta.png">
+                    </div>
+
+                    <div class="cannon-image">
+                        <img src="assets/frame4/cannon.png">
+                    </div>
+
+                </div>
+                <div class="frame frame-5">
+                    <div class="copy-right">
+                        <img src="assets/copy.png">
+                    </div>
+                    <div class="logo">
+                        <img src="assets/logo.png">
+                    </div>
+                    <div class="decoration">
+                        <img src="assets/decoration.png">
+                    </div>
+
+                    <div class="score-box">
+                        <img src="assets/frame5/box.png">
+                    </div>
+                    <div class="text">
+                        <img src="assets/frame5/score.png">
+                    </div>
+
+                    <div class="ponds">
+                        <img src="assets/frame5/pounds.png">
+                    </div>
+                    <div class="score-lines">
+                        <img src="assets/frame5/lines.png">
+                    </div>
+                    <div class="score">
+                         <span id="score_result"></span>
+                    </div>
+                    <div class="share-text">
+                        <img src="assets/frame5/text1.png">
+                    </div>
+                    <div class="replay-text">
+                        <img src="assets/frame5/text2.png">
+                    </div>
+                    <div class="replay-final-btn">
+                        <img src="assets/frame5/cta2.png">
+                    </div>
+                    <div class="share-btn">
+                        <img src="assets/frame5/cta1.png">
+                    </div>
+
+                </div>
+                <div class="frame frame-6">
+                    <div class="copy-right">
+                        <img src="assets/copy.png">
+                    </div>
+                    <div class="logo">
+                        <img src="assets/logo.png">
+                    </div>
+                    <div class="decoration">
+                        <img src="assets/decoration.png">
+                    </div>
+                    <div class="bank-image">
+                        <img src="assets/bank.png">
+                    </div>
+                    <div class="text">
+                        <img src="assets/frame6/text.png">
+                    </div>
+                    <div class="error-text">
+                        <p>.الرجاء ملء  جميع البيانات للارسال</p>
+                    </div>
+                    <div class="user-name">
+                        <img src="assets/frame6/name.png">
+                        <input type="text" id="user_name">
+                    </div>
+                    <div class="user-family">
+                        <img src="assets/frame6/family-name.png">
+                        <input type="text" id="user_family_name">
+                    </div>
+
+                        <div class="user-email">
+                            <img src="assets/frame6/email.png">
+                            <input type="email"   id="user_email" required>
+                        </div>
+
+
+                    <div class="user-phone">
+                        <img src="assets/frame6/number.png">
+                        <input type="number" id="user_phone">
+
+                    </div>
+                    <div class="error-email"><p>  الرجاء ادخال بريد الكتروني صحيح  </p></div>
+                    <div class="send-info-btn">
+                        <img src="assets/frame6/cta.png">
+                    </div>
+
+
+
+                </div>
+                <div class="frame frame-7">
+                    <div class="decoration">
+                        <img src="assets/decoration.png">
+                    </div>
+                    <div class="bank-image">
+                        <img src="assets/bank.png">
+                    </div>
+
+                    <div class="logo">
+                        <img src="assets/logo.png">
+                    </div>
+                    <div class="text">
+                        <img src="assets/frame7/text.png">
+                    </div>
+                    <div class="social-media">
+                        <img class="fb" src="assets/frame7/fb.png">
+                        <img class="twitter" src="assets/frame7/twitter.png">
+                    </div>
+                    
+                    <div class="hashtag">
+                        <img src="assets/frame7/hashtag.png">
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
